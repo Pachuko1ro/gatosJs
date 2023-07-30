@@ -18,3 +18,19 @@ var mensaje ='Gato '
     for (var i = 0; i < cantidad ; i++)
     
     console.log(mensaje + '#' + ++contador + ':'+ cGatos[i]);
+
+    console.log('\n/* ---Ejecicio 06 -Punto b) Gato y Pasos--- */')
+    //---------------------------------------------------
+    //         Ejecicio 06 -Punto b) Gato y Pasos
+    //---------------------------------------------------  
+    
+    var cantidadDeGatos = 10
+    var cantidadPasos = 5
+    var gatos = ['🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈']
+    var pasos = '🐾'
+    var contador = 0
+    var mensaje ='Gato '
+    
+        for (var i = 0; i < cantidadDeGatos ; i++)
+        
+        console.log(mensaje + '#' + ++contador + ':'+ gatos[i] + pasos.repeat(cantidadPasos));

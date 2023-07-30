@@ -17,20 +17,43 @@ var mensaje ='Gato '
     
     for (var i = 0; i < cantidad ; i++)
     
-    console.log(mensaje + '#' + ++contador + ':'+ cGatos[i]);
+console.log(mensaje + '#' + ++contador + ':'+ cGatos[i]);
 
-    console.log('\n/* ---Ejecicio 06 -Punto b) Gato y Pasos--- */')
-    //---------------------------------------------------
-    //         Ejecicio 06 -Punto b) Gato y Pasos
-    //---------------------------------------------------  
+console.log('\n/* ---Ejecicio 06 -Punto b) Gato y Pasos--- */')
+//---------------------------------------------------
+//         Ejecicio 06 -Punto b) Gato y Pasos
+//---------------------------------------------------  
+
+var cantidadDeGatos = 10
+var cantidadPasos = 5
+
+var gatos = ['🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈']
+var pasos = '🐾'
+var contador = 0
+var mensaje ='Gato '
+
+    for (var i = 0; i < cantidadDeGatos ; i++)
     
-    var cantidadDeGatos = 10
-    var cantidadPasos = 5
-    var gatos = ['🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈']
-    var pasos = '🐾'
-    var contador = 0
-    var mensaje ='Gato '
+    console.log(mensaje + '#' + ++contador + ':'+ gatos[i] + pasos.repeat(cantidadPasos));
+
+console.log('\n/* ---Ejecicio 06 -Punto c) Gato + gato + Pasos--- */')
+
+
+//---------------------------------------------------
+//    Ejecicio 06 -Punto c) Gato + gato + Pasos
+//---------------------------------------------------  
+
+var cantidadDeGatos = 8
+var cantidadPasos = 5
+
+var gatos = ['🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈','🐈']
+var pasos = '🐾'
+var gatoNegro = '🐈‍⬛'
+var contador = 0
+var mensaje ='Gato'
+
+    for (var i = 1; i < cantidadDeGatos+1 ; i++) 
     
-        for (var i = 0; i < cantidadDeGatos ; i++)
-        
-        console.log(mensaje + '#' + ++contador + ':'+ gatos[i] + pasos.repeat(cantidadPasos));
+    console.log(mensaje + ' #' + ++contador + ':'+ gatos[i] + (i%2 == 0? gatoNegro :'') + pasos.repeat(cantidadPasos))
+            
+                   
